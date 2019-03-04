@@ -1,0 +1,49 @@
+PROJECT IMAGES CLASSIFICATION RESULTS
+
++--------------------+----+
+| # Total images     | 40 |
++--------------------+----+
+| # Dog images       | 30 |
++--------------------+----+
+| # Not-a-dog images | 10 |
++--------------------+----+
+
++------------------------+---------------------+---------------+-----------------+---------------+
+| CNN Model Architecture | % Not-a-dog Correct | % Dog Correct | % Breed Correct | % Match Label |
++------------------------+---------------------+---------------+-----------------+---------------+
+| ResNet                 |       90.00%        |    100.00%    |      90.00%     |     82.50%    |
++------------------------+---------------------+---------------+-----------------+---------------+
+| AlexNet                |      100.00%        |    100.00%    |      80.00%     |     75.00%    |
++------------------------+---------------------+---------------+-----------------+---------------+
+| VGG                    |      100.00%        |    100.00%    |      93.33%     |     87.50%    |
++------------------------+---------------------+---------------+-----------------+---------------+
+
+
+PROJECT UPLOADED IMAGES CLASSIFICATION RESULTS
+
++--------------------+---+
+| # Total images     | 4 |
++--------------------+---+
+| # Dog images       | 2 |
++--------------------+---+
+| # Not-a-dog images | 2 |
++--------------------+---+
+
++------------------------+---------------------+---------------+-----------------+---------------+
+| CNN Model Architecture | % Not-a-dog Correct | % Dog Correct | % Breed Correct | % Match Label |
++------------------------+---------------------+---------------+-----------------+---------------+
+| ResNet                 |      100.00%        |    100.00%    |     100.00%     |     75.00%    |
++------------------------+---------------------+---------------+-----------------+---------------+
+| AlexNet                |      100.00%        |    100.00%    |     100.00%     |     50.00%    |
++------------------------+---------------------+---------------+-----------------+---------------+
+| VGG                    |      100.00%        |    100.00%    |     100.00%     |     50.00%    |
++------------------------+---------------------+---------------+-----------------+---------------+
+
+* Answers to questions regarding Uploaded Image Classification
+1. The three model architectures classify the breed of dog in French_bulldog_01.jpg to be the same breed.
+
+2. Each of the three model architectures classify the breed of dog in French_bulldog_01.jpg to be the same breed of dog as that model architecture classified French_bulldog_02.jpg.
+ 
+3. The three model architectures correctly classify Snowy_owl_01.jpg and Pillow_01.jpg to not be dogs.
+ 
+4. ResNet is the model architecture that did the best at classifying the four uploaded images. Although all 3 models were able to classify correctly the 2 french bulldog images and point out that Snowy_owl_01.jpg is an owl, only ResNet was able to correctly classify the object image (Pillow_01.jpg). Additionally, Resnet is one of the 2 models with the shortest run time (along with AlexNet)
